@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import Principal from '../components/telas/Principal'; // Assuming correct directory
+import Principal from '../components/telas/Principal';
 
 const App = () => {
   return (

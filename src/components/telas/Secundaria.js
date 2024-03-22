@@ -1,14 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, Button} from 'react-native'
-//import Clipboard from '@react-native-clipboard/clipboard'
 
 
 const Secundaria = ({ route }) => {
     const { valor, ...otherProps } = route.params 
-    //const copyToClipboard = () => {
-        //Clipboard.setString(route.params.resposta.payment);
-        //alert('Texto copiado para a área de transferência!');
-      //};
     console.log(route.params.resposta.payment)
     return (
         <View style={styles.container}>
@@ -23,7 +18,6 @@ const Secundaria = ({ route }) => {
         </View>
     )
 }
-//<Button style={{marginTop: 50}} title="Copiar QrCode" onPress={copyToClipboard} />
 
 const styles = StyleSheet.create({
     container: {

@@ -24,10 +24,10 @@ export default props => {
 import React from 'react';
 import { Button } from 'react-native';
 import { createPix } from '../paggue/communication';
-import { useNavigation } from '@react-navigation/native'; // Importe o hook useNavigation
+import { useNavigation } from '@react-navigation/native'; 
 
 export default function MyButton() {
-  const navigation = useNavigation(); // Obter o objeto de navegação usando o hook useNavigation
+  const navigation = useNavigation(); 
 
   async function utilPaggue() {
     try {
@@ -35,7 +35,6 @@ export default function MyButton() {
       const response = await createPix(order);
       console.warn('Resposta da solicitação POST:', response);
       
-      // Navegar para a tela QrCode passando o valor do campo 'payment'
       navigation.navigate('QrCode', { variavel: response.payment });
     } catch (error) {
       console.error('Erro ao fazer a solicitação POST:', error);
